@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./js/jquery.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+   
+
+  
+
+    <title>Document</title>
+</head>
+
+<body>
+
+   <div class="header-wrapper">
+
+        <header class="header container flex-box">
+
+            <div class="header-logo">
+
+                <a href="/">
+
+                    <i class="fas fa-heart"></i>
+
+                </a>
+
+            </div>
+
+            <div class="phone-number">
+
+                <a href="tel:+38(050)06  -37-812" class="tel" id="tel">+3(012)345-45-67</a>
+
+            </div>
+
+        </header>
+
+    </div>
+
+    <main>
+
+        <div class="main-wrapper">
+
+            <div class="main-content container flex-box">
+
+                <div class="main-img img-box">
+
+                    <img src="./img/logo.jpg" alt="logo">
+
+                </div>
+
+                <div class="main-text">
+
+                    <form action="/" class="form" method="post">
+
+                        <fieldset>
+
+                        <legend>Заполните форму</legend>
+
+                        <div class="grid">
+
+                            <input type="text" autocomplete="on" name="name" placeholder="Ваше имя" autofocus minlength="2" maxlength="10">
+
+                            <input type="text" class="datepicker" placeholder="Дата последней вечеринки" id="datepicker" name="birthday">
+
+                            <input type="email" name="email" placeholder="Ваш email">
+
+                            <input type="tel" class="phone-mask" id="phone" name="phone" placeholder="+38(___)_______">
+
+
+                            <div class="radio-btn flex-column">
+
+                               <span class="sub-title mb-10">Выберите животное:</span>
+
+                                <label class="point sub-title">
+
+                                    <input name="animal" type="radio">
+
+                                    <span>Панда</span>
+
+                                </label>
+
+                               <label class="point sub-title">
+
+                                   <input name="animal" type="radio">
+
+                                   <span>Дракон</span>
+
+                               </label>
+
+                               <label class="point sub-title">
+
+                                   <input name="animal" type="radio">
+
+                                   <span>Тигр</span>
+
+                               </label>
+
+                               <label class="point sub-title">
+
+                                   <input name="animal" type="radio">
+
+                                   <span>Дельфин</span>
+
+                               </label>
+
+                            </div>
+
+                            <div class="range">
+
+                                <label for="amount" class="sub-title mb-10">Оцените насколько Вы удовлетворены своей жизню по шкале от 1 до 10:</label>
+
+                                <input type="number" id="amount" readonly>
+
+                                <div class="slider" id="slider-range-max"></div>
+
+                           </div>
+
+                           <div class="quantity flex-column">
+
+                               <label class="sub-title mb-10" for="num_count">Сколько пирожков вы можете сьесть за один раз:</label>
+
+                               <div class="quantity-box">
+
+                                   <input type="number" id="num_count" name="quantity" value="1" readonly>
+
+                                   <input type="button" value="-" id="button_minus">
+
+                                   <input type="button" value="+" id="button_plus">
+
+                              </div>
+
+                            </div>
+
+                            <div class="select">
+
+                                <a href="javascript:void(0);" class="choose">Выберите Ваш любимый праздник:</a>
+
+                                <ul class="drop">
+
+                                    <li><a data-value="birthd">День Рождения</a></li>
+
+                                    <li><a data-value="new-year">Новый Год</a></li>
+
+                                    <li><a data-value="helloween">Хэллоуин</a></li>
+
+                                    <li><a data-value="pie-day">День Пирожка</a></li>
+
+                                </ul>
+
+                                <input type="hidden" id="select">
+
+                             </div>
+
+                            <div class="textarea-container flex-column">
+
+                                <label for="textarea" class="sub-title mb-10">Назовите три вещи, которые вас вдохновляют больше всего
+                                </label>
+
+                                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Например: 1. Пирожки...."></textarea>
+
+                            </div>
+
+                            <div class="btn-box">
+
+                                <button class="btn" type="submit">Отправить</button>
+
+                            </div>
+
+                        </div>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <div class="footer-wrapper">
+
+       <footer class="footer container">
+
+           <ul class="footer-items">
+
+               <li class="item"><a href="/">Link</a></li>
+               <li class="item"><a href="/">Link</a></li>
+               <li class="item"><a href="/">Link</a></li>
+               <li class="item"><a href="/">Link</a></li>
+               <li class="item"><a href="/">Link</a></li>
+
+           </ul>
+
+           <span>Coperight © 2022</span>
+
+       </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/date-picker.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
+    <!-- <script src="./js/jquery.maskedinput.min.js"></script> -->
+   
+    <script src="js/slider.js"></script>
+
+
+ <script>
+    $(function(){
+        $("#phone").mask("+38(999)9999999");
+    });
+ </script>
+
+ <script src="js/num-count.js"></script>
+ <script src="js/replace.js"></script>
+ <script src="js/select.js"></script>
+</body>
+</html>

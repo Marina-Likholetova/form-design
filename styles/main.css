@@ -1,0 +1,212 @@
+.main-img,
+.main-text {
+    width: 50%;
+}
+
+.form {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+fieldset {
+    border: 5px dashed #FFFFFF;
+}
+
+legend {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+
+input,
+.textarea {
+    background: #FFFFFF;
+    color: var(--dark-primary);
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+input:-internal-autofill-selected {
+    background: #FFFFFF;
+    color: var(--dark-primary);
+}
+
+::placeholder {
+    color: var(--dark-primary);
+}
+
+.choose {
+    display: block;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    max-width: 400px;
+    padding: 10px 15px 10px 10px;
+    color: var(--dark-primary);
+    background-position: 290px -145px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.choose.active {
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+
+.drop {
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    border: 1px dashed #FFFFFF;
+    border-top: none;
+    display: none;
+    position: absolute;
+    background-color: var(--dark-primary);
+}
+
+.drop li {
+    list-style: none;
+    border-radius: 20px;
+    border: 1px dashed #FFFFFF;
+    cursor: pointer;
+    display: block;
+    padding: 4px 15px 4px 25px;
+    background-position: 10px -119px;
+}
+
+.drop li a {
+    color: #FFFFFF;
+}
+
+.drop li:hover {
+    background-color: #FFFFFF;
+}
+
+.drop li:hover a {
+    color: var(--third);
+}
+
+.radio-btn {
+    line-height: 150%;
+    padding: 10px 10px;
+}
+
+.point {
+    position: relative;
+}
+
+.point span {
+    padding-left: 20px;
+}
+
+.point input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.point span::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+    border: 5px solid var(--dark-primary);
+    background-color: #FFFFFF;
+    left: 0;
+    top: 1px;
+}
+
+.point input:checked + span::before {
+    border: 5px solid #FFFFFF;
+    background-color: var(--dark-primary);
+}
+
+input[type=number] {
+    padding: 10px 0 10px 10px;
+    font-weight: 700;
+    max-width: 50px;
+    text-align: center;
+}
+
+.slider {
+    margin-top: 10px;
+}
+
+.ui-widget-content {
+    background: var(--dark-primary);
+    border: 1px solid #FFFFFF;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    top: 3px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, 
+.ui-datepicker .ui-datepicker-next span {
+    margin: 0; 
+    top: 35%;
+    left: 22%;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 12px solid #000;
+    border-bottom: 6px solid transparent;
+}
+
+.ui-datepicker-prev span:hover, 
+.ui-datepicker-next span:hover {
+    border-right-color: var(--primary);
+}
+
+.ui-datepicker .ui-datepicker-next span {
+    transform: rotate(180deg);
+}
+
+a.ui-datepicker-prev.ui-corner-all.ui-state-hover.ui-datepicker-prev-hover,
+a.ui-datepicker-next.ui-corner-all.ui-state-hover.ui-datepicker-next-hover {
+    border: none;
+    background: none;
+}
+
+.ui-widget-header {
+    background: var(--dark-primary);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.ui-button.ui-state-disabled:hover,
+.ui-button.ui-state-disabled:active {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    text-align: center;
+    background-size: 30px;
+}
+
+
+.slider span.ui-slider-handle.ui-corner-all.ui-state-default {
+    background-image: url(../img/range.png);
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.8em;
+}
+
+.ui-slider-handle:focus-visible {
+    outline: none;
+}
+
+.btn-box {
+    margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+.footer-wrapper {
+    background-color: var(--dark-primary);
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer span {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+}

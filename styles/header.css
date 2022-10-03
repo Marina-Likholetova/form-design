@@ -1,0 +1,27 @@
+.header-wrapper {
+    background-color: var(--dark-primary);
+    /*    width: 100%;*/
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header a {
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.header-logo i {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    padding: 40px 10px;
+    min-width: 180px;
+}

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
